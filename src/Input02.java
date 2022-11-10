@@ -10,15 +10,15 @@ public class Input02 {
 
         
         String input1 = (String)JOptionPane.showInputDialog(null,
-                "Is this a question?",
-                "Dialog Title",
+                "What is your name?",
+                "Question",
                 2,
                 null,
                 null,
-                "Type something here.");
+                "Type your name.");
+        System.out.print("Your name is " + input1 + ".");
         
-        
-        String[] acceptableValues = {"Choice 1", "Choice 2", "Choice 3"};
+        String[] acceptableValues = {"Yes", "Maybe", "No"};
         String input2 = (String)JOptionPane.showInputDialog(null,
                 "Is this a question?",
                 "Dialog Title",
@@ -26,6 +26,7 @@ public class Input02 {
                 null,
                 acceptableValues,
                 acceptableValues[1]);
+
                 
     }
 }
